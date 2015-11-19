@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ix6-LW-vIy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Konashi Test View Controller-->
+        <scene sceneID="ySr-5g-2mK">
+            <objects>
+                <viewController id="Ix6-LW-vIy" customClass="KonashiTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dsd-y3-1YS"/>
+                        <viewControllerLayoutGuide type="bottom" id="VKQ-lq-CdL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y5L-TH-T7D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMc-hV-6bl">
+                                <rect key="frame" x="42" y="35" width="103" height="79"/>
+                                <animations/>
+                                <state key="normal" title="Find"/>
+                                <connections>
+                                    <action selector="findKonashi:" destination="Ix6-LW-vIy" eventType="touchUpInside" id="MDo-Fv-6hU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRd-D3-Iga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="390"/>
+        </scene>
+    </scenes>
+</document>
