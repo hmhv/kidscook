@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="yellowbg" translatesAutoresizingMaskIntoConstraints="NO" id="lTZ-pX-VT8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="siromaru" translatesAutoresizingMaskIntoConstraints="NO" id="cUh-TB-uKR">
+                                <rect key="frame" x="12" y="-184" width="343" height="851"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="8AG-gu-lQ6" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="20" y="303" width="340" height="79"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrV-pG-dsY" customClass="DesignableButton" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="6" y="457" width="363" height="81"/>
+                                <animations/>
+                                <state key="normal" image="startbutton"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hz-HN-FZd"/>
+                                    <segue destination="WXi-tV-Qmn" kind="presentation" id="XJa-MI-hQL"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="PN0-Pd-VYu" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="53" y="122" width="274" height="160"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lTZ-pX-VT8" secondAttribute="trailing" id="A5Z-Jw-hE7"/>
+                            <constraint firstItem="lTZ-pX-VT8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DTc-2Y-FWv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lTZ-pX-VT8" secondAttribute="bottom" id="Vv7-W7-Gtc"/>
+                            <constraint firstItem="lTZ-pX-VT8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iPC-c9-RAU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="logo1ImageView" destination="PN0-Pd-VYu" id="DPp-MG-Ixe"/>
+                        <outlet property="logo2ImageView" destination="8AG-gu-lQ6" id="jdT-eQ-7eP"/>
+                        <outlet property="startButton" destination="hrV-pG-dsY" id="x7k-Lv-hyS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459.5" y="468.5"/>
+        </scene>
+        <!--Cup View Controller-->
+        <scene sceneID="WW8-cK-rnY">
+            <objects>
+                <viewController id="WXi-tV-Qmn" customClass="CupViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x8o-Hf-8pz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mji-ge-jtf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BNj-5Q-hLM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="yellowbg" translatesAutoresizingMaskIntoConstraints="NO" id="Rki-uX-qSc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cup_description" translatesAutoresizingMaskIntoConstraints="NO" id="kWJ-zT-f6H">
+                                <rect key="frame" x="13" y="544" width="348" height="83"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-RY-TWb">
+                                <rect key="frame" x="15" y="308" width="345" height="207"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="Keu-HR-ePn">
+                                <rect key="frame" x="13" y="372" width="251" height="25"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="volvic" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-70-csO" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="176" y="15" width="199" height="194"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nice" translatesAutoresizingMaskIntoConstraints="NO" id="bkI-pL-4Y3">
+                                <rect key="frame" x="15" y="96" width="157" height="157"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="water_text" translatesAutoresizingMaskIntoConstraints="NO" id="Icf-38-LpY">
+                                <rect key="frame" x="126" y="179" width="101" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-UY-I5I">
+                                <rect key="frame" x="151" y="177" width="50" height="63"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cupImageView" destination="gdu-RY-TWb" id="J0Q-Zn-gw6"/>
+                        <outlet property="niceImageView" destination="bkI-pL-4Y3" id="sCs-dd-jy1"/>
+                        <outlet property="volvicImageView" destination="2gc-70-csO" id="GPZ-ds-eaM"/>
+                        <outlet property="waterImageView" destination="sVf-UY-I5I" id="oi7-w3-SS5"/>
+                        <outlet property="waterTextImageView" destination="Icf-38-LpY" id="BTT-Mq-olY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekl-dp-5L4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953.5" y="468.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cup" width="345" height="207"/>
+        <image name="cup_description" width="348" height="83"/>
+        <image name="line" width="251" height="25"/>
+        <image name="logo1" width="274" height="160"/>
+        <image name="logo2" width="340" height="79"/>
+        <image name="nice" width="157" height="157"/>
+        <image name="siromaru" width="343" height="851"/>
+        <image name="startbutton" width="309" height="81"/>
+        <image name="volvic" width="199" height="194"/>
+        <image name="water" width="50" height="63"/>
+        <image name="water_text" width="101" height="128"/>
+        <image name="yellowbg" width="375" height="667"/>
+    </resources>
+</document>
