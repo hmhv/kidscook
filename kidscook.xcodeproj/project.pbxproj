@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1024E1EF1BFE08A60005660A /* trumpet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1024E1EE1BFE08A60005660A /* trumpet.mp3 */; };
+		1024E1F91BFE8EE20005660A /* a2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024E1F81BFE8EE20005660A /* a2ViewController.swift */; };
+		1024E1FB1BFE8EEE0005660A /* a3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024E1FA1BFE8EEE0005660A /* a3ViewController.swift */; };
+		1024E1FD1BFE8EF80005660A /* a4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024E1FC1BFE8EF80005660A /* a4ViewController.swift */; };
+		1024E1FF1BFE8F020005660A /* a6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024E1FE1BFE8F020005660A /* a6ViewController.swift */; };
+		1024E2011BFE8F100005660A /* a7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024E2001BFE8F100005660A /* a7ViewController.swift */; };
+		1024E2031BFE8F200005660A /* a8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024E2021BFE8F200005660A /* a8ViewController.swift */; };
 		109E21E81BFB529000F153DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109E21E71BFB529000F153DB /* AppDelegate.swift */; };
 		109E21EA1BFB529000F153DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109E21E91BFB529000F153DB /* ViewController.swift */; };
 		109E21ED1BFB529000F153DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109E21EB1BFB529000F153DB /* Main.storyboard */; };
@@ -45,6 +52,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1024E1EE1BFE08A60005660A /* trumpet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trumpet.mp3; sourceTree = "<group>"; };
+		1024E1F81BFE8EE20005660A /* a2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = a2ViewController.swift; sourceTree = "<group>"; };
+		1024E1FA1BFE8EEE0005660A /* a3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = a3ViewController.swift; sourceTree = "<group>"; };
+		1024E1FC1BFE8EF80005660A /* a4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = a4ViewController.swift; sourceTree = "<group>"; };
+		1024E1FE1BFE8F020005660A /* a6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = a6ViewController.swift; sourceTree = "<group>"; };
+		1024E2001BFE8F100005660A /* a7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = a7ViewController.swift; sourceTree = "<group>"; };
+		1024E2021BFE8F200005660A /* a8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = a8ViewController.swift; sourceTree = "<group>"; };
 		109E21E41BFB529000F153DB /* kidscook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidscook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109E21E71BFB529000F153DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		109E21E91BFB529000F153DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +129,7 @@
 		109E21E61BFB529000F153DB /* kidscook */ = {
 			isa = PBXGroup;
 			children = (
+				1024E1EE1BFE08A60005660A /* trumpet.mp3 */,
 				109E21F31BFB529000F153DB /* Info.plist */,
 				109E21F91BFB52BE00F153DB /* Spring */,
 				109E21F01BFB529000F153DB /* LaunchScreen.storyboard */,
@@ -123,6 +138,12 @@
 				109E21EB1BFB529000F153DB /* Main.storyboard */,
 				109E21E91BFB529000F153DB /* ViewController.swift */,
 				109E22351BFB5F4900F153DB /* CupViewController.swift */,
+				1024E1F81BFE8EE20005660A /* a2ViewController.swift */,
+				1024E1FA1BFE8EEE0005660A /* a3ViewController.swift */,
+				1024E1FC1BFE8EF80005660A /* a4ViewController.swift */,
+				1024E1FE1BFE8F020005660A /* a6ViewController.swift */,
+				1024E2001BFE8F100005660A /* a7ViewController.swift */,
+				1024E2021BFE8F200005660A /* a8ViewController.swift */,
 			);
 			path = kidscook;
 			sourceTree = "<group>";
@@ -226,6 +247,7 @@
 				109E21F21BFB529000F153DB /* LaunchScreen.storyboard in Resources */,
 				109E21EF1BFB529000F153DB /* Assets.xcassets in Resources */,
 				109E21ED1BFB529000F153DB /* Main.storyboard in Resources */,
+				1024E1EF1BFE08A60005660A /* trumpet.mp3 in Resources */,
 				109E22271BFB52BE00F153DB /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,14 +263,17 @@
 				109E22231BFB52BE00F153DB /* ImageLoader.swift in Sources */,
 				109E22281BFB52BE00F153DB /* Misc.swift in Sources */,
 				109E221D1BFB52BE00F153DB /* DesignableImageView.swift in Sources */,
+				1024E1FB1BFE8EEE0005660A /* a3ViewController.swift in Sources */,
 				109E222D1BFB52BE00F153DB /* SpringImageView.swift in Sources */,
 				109E21EA1BFB529000F153DB /* ViewController.swift in Sources */,
 				109E22291BFB52BE00F153DB /* SoundPlayer.swift in Sources */,
 				109E22301BFB52BE00F153DB /* SpringTextView.swift in Sources */,
+				1024E2031BFE8F200005660A /* a8ViewController.swift in Sources */,
 				109E21E81BFB529000F153DB /* AppDelegate.swift in Sources */,
 				109E22221BFB52BE00F153DB /* DesignableView.swift in Sources */,
 				109E222B1BFB52BE00F153DB /* SpringAnimation.swift in Sources */,
 				109E222A1BFB52BE00F153DB /* Spring.swift in Sources */,
+				1024E1FF1BFE8F020005660A /* a6ViewController.swift in Sources */,
 				109E22261BFB52BE00F153DB /* LoadingView.swift in Sources */,
 				109E222F1BFB52BE00F153DB /* SpringTextField.swift in Sources */,
 				109E221C1BFB52BE00F153DB /* DesignableButton.swift in Sources */,
@@ -258,6 +283,7 @@
 				109E22251BFB52BE00F153DB /* KeyboardLayoutConstraint.swift in Sources */,
 				109E222C1BFB52BE00F153DB /* SpringButton.swift in Sources */,
 				109E22191BFB52BE00F153DB /* AsyncImageView.swift in Sources */,
+				1024E1FD1BFE8EF80005660A /* a4ViewController.swift in Sources */,
 				109E221F1BFB52BE00F153DB /* DesignableTabBarController.swift in Sources */,
 				109E221A1BFB52BE00F153DB /* AutoTextView.swift in Sources */,
 				109E22211BFB52BE00F153DB /* DesignableTextView.swift in Sources */,
@@ -265,8 +291,10 @@
 				109E22341BFB52BE00F153DB /* UnwindSegue.swift in Sources */,
 				109E22321BFB52BE00F153DB /* TransitionManager.swift in Sources */,
 				109E221B1BFB52BE00F153DB /* BlurView.swift in Sources */,
+				1024E2011BFE8F100005660A /* a7ViewController.swift in Sources */,
 				109E22311BFB52BE00F153DB /* SpringView.swift in Sources */,
 				109E22331BFB52BE00F153DB /* TransitionZoom.swift in Sources */,
+				1024E1F91BFE8EE20005660A /* a2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +442,7 @@
 				109E21F81BFB529000F153DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

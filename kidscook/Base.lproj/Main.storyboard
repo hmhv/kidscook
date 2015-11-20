@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
@@ -35,7 +34,7 @@
                                 <state key="normal" image="startbutton"/>
                                 <connections>
                                     <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hz-HN-FZd"/>
-                                    <segue destination="WXi-tV-Qmn" kind="presentation" id="XJa-MI-hQL"/>
+                                    <segue destination="s4c-tl-koy" kind="presentation" id="VKm-tS-cUJ"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="PN0-Pd-VYu" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
@@ -61,7 +60,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459.5" y="468.5"/>
+            <point key="canvasLocation" x="117.5" y="498.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="va0-32-cvp">
+            <objects>
+                <viewController id="TQL-E7-6do" customClass="a6ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="seL-gB-5de"/>
+                        <viewControllerLayoutGuide type="bottom" id="RAe-hw-BUJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IXW-9o-kjs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bg6" translatesAutoresizingMaskIntoConstraints="NO" id="qU2-Rl-UYk">
+                                <rect key="frame" x="-2" y="-3" width="378" height="674"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="center" fixedFrame="YES" image="bg6_2" translatesAutoresizingMaskIntoConstraints="NO" id="C6g-bd-7Ml">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="674"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="NfC-14-cwm">
+                                <rect key="frame" x="57" y="204" width="265" height="265"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-32-tMV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="nhF-3m-6VR" kind="presentation" id="75G-pC-D8x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="heartImageView" destination="NfC-14-cwm" id="zBB-TX-cEJ"/>
+                        <outlet property="shineImageView" destination="C6g-bd-7Ml" id="ouc-RC-W5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgX-JG-m1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.5" y="1274.5"/>
         </scene>
         <!--Cup View Controller-->
         <scene sceneID="WW8-cK-rnY">
@@ -75,68 +119,261 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="yellowbg" translatesAutoresizingMaskIntoConstraints="NO" id="Rki-uX-qSc">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0010_mizu1" translatesAutoresizingMaskIntoConstraints="NO" id="tva-5k-Jw5">
+                                <rect key="frame" x="0.0" y="200" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0009_mizu2" translatesAutoresizingMaskIntoConstraints="NO" id="tfk-4F-eSF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cup_description" translatesAutoresizingMaskIntoConstraints="NO" id="kWJ-zT-f6H">
-                                <rect key="frame" x="13" y="544" width="348" height="83"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0008_bk" translatesAutoresizingMaskIntoConstraints="NO" id="EiT-NS-23a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-RY-TWb">
-                                <rect key="frame" x="15" y="308" width="345" height="207"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0007_レイヤー-1" translatesAutoresizingMaskIntoConstraints="NO" id="D5g-Bg-7Sq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="Keu-HR-ePn">
-                                <rect key="frame" x="13" y="372" width="251" height="25"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0006_red_line" translatesAutoresizingMaskIntoConstraints="NO" id="rT2-Yg-PrR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="volvic" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-70-csO" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
-                                <rect key="frame" x="176" y="15" width="199" height="194"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0005_water1" translatesAutoresizingMaskIntoConstraints="NO" id="fjV-cn-SvN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nice" translatesAutoresizingMaskIntoConstraints="NO" id="bkI-pL-4Y3">
-                                <rect key="frame" x="15" y="96" width="157" height="157"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0004_water2" translatesAutoresizingMaskIntoConstraints="NO" id="D21-3J-k7q" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="water_text" translatesAutoresizingMaskIntoConstraints="NO" id="Icf-38-LpY">
-                                <rect key="frame" x="126" y="179" width="101" height="128"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0003_water3" translatesAutoresizingMaskIntoConstraints="NO" id="lWb-Sf-6OY" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-UY-I5I">
-                                <rect key="frame" x="151" y="177" width="50" height="63"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0002_water4" translatesAutoresizingMaskIntoConstraints="NO" id="rGJ-yZ-iGo" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="h3w-2O-Ab3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nice" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-0A-dv7" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="cupImageView" destination="gdu-RY-TWb" id="J0Q-Zn-gw6"/>
-                        <outlet property="niceImageView" destination="bkI-pL-4Y3" id="sCs-dd-jy1"/>
-                        <outlet property="volvicImageView" destination="2gc-70-csO" id="GPZ-ds-eaM"/>
-                        <outlet property="waterImageView" destination="sVf-UY-I5I" id="oi7-w3-SS5"/>
-                        <outlet property="waterTextImageView" destination="Icf-38-LpY" id="BTT-Mq-olY"/>
+                        <outlet property="drop1ImageView" destination="fjV-cn-SvN" id="eJl-rR-pxF"/>
+                        <outlet property="drop2ImageView" destination="D21-3J-k7q" id="ilH-v1-dW0"/>
+                        <outlet property="drop3ImageView" destination="lWb-Sf-6OY" id="Hvs-gO-F2B"/>
+                        <outlet property="drop4ImageView" destination="rGJ-yZ-iGo" id="ZmX-f3-dun"/>
+                        <outlet property="hiraMizuImageView" destination="tfk-4F-eSF" id="uV2-Mr-bjW"/>
+                        <outlet property="namiMizuImageView" destination="tva-5k-Jw5" id="RWQ-Wz-Xzw"/>
+                        <outlet property="niceImageView" destination="zLt-0A-dv7" id="Urh-Wa-NpN"/>
+                        <segue destination="TQL-E7-6do" kind="presentation" identifier="HeartSegue" id="vMD-6b-eWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ekl-dp-5L4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953.5" y="468.5"/>
+            <point key="canvasLocation" x="109.5" y="1274.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="507-VS-HNh">
+            <objects>
+                <viewController id="KpB-uL-U9b" customClass="a4ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="si9-Zf-yeU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xJ4-Bx-TMy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vdo-3W-4as">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="4fh-dR-hde">
+                                <rect key="frame" x="-2" y="-2" width="377" height="669"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odI-tf-4OY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="WXi-tV-Qmn" kind="presentation" id="qqF-qR-qez"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUV-ba-92u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419.5" y="498.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zLc-Eb-VQm">
+            <objects>
+                <viewController id="OZp-Uz-Odh" customClass="a3ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NpR-fS-LJ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="YpF-TY-l6E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1M4-8m-mbh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wuG-Rw-aLX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm6-Cr-Qyq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="KpB-uL-U9b" kind="presentation" id="hvr-qh-Lz7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHg-YU-Yvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.5" y="498.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oU9-rp-6dm">
+            <objects>
+                <viewController id="s4c-tl-koy" customClass="a2ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RE2-TN-vYs"/>
+                        <viewControllerLayoutGuide type="bottom" id="aId-rK-xxu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XzW-IM-eQL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="sCm-2B-jng">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apr-qp-d9V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="OZp-Uz-Odh" kind="presentation" id="4iN-2Y-zfr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDb-SI-3Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.5" y="498.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Bf-v7-8o1">
+            <objects>
+                <viewController id="nhF-3m-6VR" customClass="a7ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ocD-cp-RTv"/>
+                        <viewControllerLayoutGuide type="bottom" id="257-Mk-XEp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qng-lh-xcn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mj8-wl-ybH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5S-q8-rW2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="LvK-Z3-VYb" kind="presentation" id="b7d-Lf-zQm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHS-rI-KRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.5" y="1274.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ns9-vc-juK">
+            <objects>
+                <viewController id="LvK-Z3-VYb" customClass="a8ViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pf2-w9-zSB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WEz-uh-aGP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnB-gS-VAB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="GLl-mQ-3KB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="but-LT-WH0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="LvK-Z3-VYb" eventType="touchUpInside" id="mm9-P5-CHP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jh0-Co-Uca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419.5" y="1274.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cup" width="345" height="207"/>
-        <image name="cup_description" width="348" height="83"/>
-        <image name="line" width="251" height="25"/>
+        <image name="1" width="375" height="667"/>
+        <image name="2" width="375" height="667"/>
+        <image name="3" width="377" height="669"/>
+        <image name="4-2_0002_water4" width="375" height="667"/>
+        <image name="4-2_0003_water3" width="375" height="667"/>
+        <image name="4-2_0004_water2" width="375" height="667"/>
+        <image name="4-2_0005_water1" width="375" height="667"/>
+        <image name="4-2_0006_red_line" width="375" height="667"/>
+        <image name="4-2_0007_レイヤー-1" width="375" height="667"/>
+        <image name="4-2_0008_bk" width="375" height="667"/>
+        <image name="4-2_0009_mizu2" width="375" height="667"/>
+        <image name="4-2_0010_mizu1" width="375" height="667"/>
+        <image name="7" width="375" height="667"/>
+        <image name="8" width="375" height="667"/>
+        <image name="bg6" width="378" height="674"/>
+        <image name="bg6_2" width="378" height="674"/>
+        <image name="heart" width="265" height="265"/>
         <image name="logo1" width="274" height="160"/>
         <image name="logo2" width="340" height="79"/>
-        <image name="nice" width="157" height="157"/>
+        <image name="nice" width="375" height="667"/>
         <image name="siromaru" width="343" height="851"/>
         <image name="startbutton" width="309" height="81"/>
-        <image name="volvic" width="199" height="194"/>
-        <image name="water" width="50" height="63"/>
-        <image name="water_text" width="101" height="128"/>
+        <image name="text" width="375" height="667"/>
         <image name="yellowbg" width="375" height="667"/>
     </resources>
 </document>
