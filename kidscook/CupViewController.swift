@@ -36,13 +36,13 @@ class CupViewController: UIViewController {
 
     func startAnimation() {
         
-        UIView.animateWithDuration(1.0, delay: 0, options: [], animations: { [weak self] () -> Void in
-            self?.drop1ImageView.alpha = 1
-            self?.drop2ImageView.alpha = 1
-            self?.drop3ImageView.alpha = 1
-            self?.drop4ImageView.alpha = 1
-            }) { (_) -> Void in
-        }
+//        UIView.animateWithDuration(1.0, delay: 0, options: [], animations: { [weak self] () -> Void in
+//            self?.drop1ImageView.alpha = 1
+//            self?.drop2ImageView.alpha = 1
+//            self?.drop3ImageView.alpha = 1
+//            self?.drop4ImageView.alpha = 1
+//            }) { (_) -> Void in
+//        }
         
         UIView.animateWithDuration(5.0, delay: 0, options: [], animations: { [weak self] () -> Void in
             self?.namiMizuImageView.frame.origin.y = -10.0
@@ -86,7 +86,7 @@ class CupViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        startAnimation()
+        //startAnimation()
         timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "animateDrop", userInfo: nil, repeats: true)
     }
     
@@ -189,11 +189,13 @@ class CupViewController: UIViewController {
 //        
 //    }
     
-//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
 //        let t = touches.first
 //        let location = t?.locationInView(cupImageView)
 //        print("\(location!.x), \(location!.y)")
-//        
-//    }
+        namiMizuImageView.frame.origin.y -= 30
+        print("namiMizuImageView.frame.y = \(namiMizuImageView.frame.origin.y)")
+        
+    }
 
 }

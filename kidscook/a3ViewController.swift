@@ -13,7 +13,7 @@ class a3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SoundPlayer.play("trumpet.mp3")
+        //SoundPlayer.play("trumpet.mp3")
 
     }
 

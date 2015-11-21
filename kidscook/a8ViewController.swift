@@ -14,14 +14,19 @@ class a8ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        
     }
 
     @IBAction func buttonTapped(sender: AnyObject) {
         
-        var parentVC = presentingViewController
-        while (parentVC?.presentingViewController != nil) {
-            parentVC = parentVC?.presentingViewController
-        }
-        parentVC!.dismissViewControllerAnimated(true, completion: nil)
+//        var parentVC = presentingViewController
+//        while (parentVC?.presentingViewController != nil) {
+//            parentVC = parentVC?.presentingViewController
+//        }
+//        parentVC!.dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popToRootViewControllerAnimated(true)
     }
 }

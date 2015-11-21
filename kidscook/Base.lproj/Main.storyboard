@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HUH-nP-Iqq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
@@ -34,7 +34,7 @@
                                 <state key="normal" image="startbutton"/>
                                 <connections>
                                     <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hz-HN-FZd"/>
-                                    <segue destination="s4c-tl-koy" kind="presentation" id="VKm-tS-cUJ"/>
+                                    <segue destination="s4c-tl-koy" kind="show" id="VKm-tS-cUJ"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="PN0-Pd-VYu" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
@@ -51,6 +51,7 @@
                             <constraint firstItem="lTZ-pX-VT8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iPC-c9-RAU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="18F-1e-SSA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="logo1ImageView" destination="PN0-Pd-VYu" id="DPp-MG-Ixe"/>
@@ -60,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.5" y="498.5"/>
+            <point key="canvasLocation" x="929.5" y="498.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="va0-32-cvp">
@@ -90,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="nhF-3m-6VR" kind="presentation" id="75G-pC-D8x"/>
+                                    <segue destination="nhF-3m-6VR" kind="show" id="75G-pC-D8x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="533.5" y="1274.5"/>
         </scene>
-        <!--Cup View Controller-->
+        <!--Konashi Cup View Controller-->
         <scene sceneID="WW8-cK-rnY">
             <objects>
-                <viewController id="WXi-tV-Qmn" customClass="CupViewController" customModule="kidscook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WXi-tV-Qmn" customClass="KonashiCupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x8o-Hf-8pz"/>
                         <viewControllerLayoutGuide type="bottom" id="Mji-ge-jtf"/>
@@ -143,15 +144,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0004_water2" translatesAutoresizingMaskIntoConstraints="NO" id="D21-3J-k7q" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0004_water2" translatesAutoresizingMaskIntoConstraints="NO" id="D21-3J-k7q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0003_water3" translatesAutoresizingMaskIntoConstraints="NO" id="lWb-Sf-6OY" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0003_water3" translatesAutoresizingMaskIntoConstraints="NO" id="lWb-Sf-6OY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0002_water4" translatesAutoresizingMaskIntoConstraints="NO" id="rGJ-yZ-iGo" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="4-2_0002_water4" translatesAutoresizingMaskIntoConstraints="NO" id="rGJ-yZ-iGo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
@@ -159,10 +160,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nice" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-0A-dv7" customClass="DesignableImageView" customModule="kidscook" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nice" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-0A-dv7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-kG-PeE">
+                                <rect key="frame" x="25" y="570" width="148" height="97"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="test:" destination="WXi-tV-Qmn" eventType="touchUpInside" id="AwM-u4-rf7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -170,19 +179,19 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="drop1ImageView" destination="fjV-cn-SvN" id="eJl-rR-pxF"/>
-                        <outlet property="drop2ImageView" destination="D21-3J-k7q" id="ilH-v1-dW0"/>
-                        <outlet property="drop3ImageView" destination="lWb-Sf-6OY" id="Hvs-gO-F2B"/>
-                        <outlet property="drop4ImageView" destination="rGJ-yZ-iGo" id="ZmX-f3-dun"/>
-                        <outlet property="hiraMizuImageView" destination="tfk-4F-eSF" id="uV2-Mr-bjW"/>
-                        <outlet property="namiMizuImageView" destination="tva-5k-Jw5" id="RWQ-Wz-Xzw"/>
-                        <outlet property="niceImageView" destination="zLt-0A-dv7" id="Urh-Wa-NpN"/>
-                        <segue destination="TQL-E7-6do" kind="presentation" identifier="HeartSegue" id="vMD-6b-eWl"/>
+                        <outlet property="hiraMizuImageView" destination="tfk-4F-eSF" id="Sxs-Hl-2pr"/>
+                        <outlet property="namiMizuImageView" destination="tva-5k-Jw5" id="SWW-ab-jWA"/>
+                        <outlet property="niceImageView" destination="zLt-0A-dv7" id="Gg5-uQ-D3t"/>
+                        <outlet property="water1ImageView" destination="fjV-cn-SvN" id="OvB-Hn-idI"/>
+                        <outlet property="water2ImageView" destination="D21-3J-k7q" id="zVq-jm-AZl"/>
+                        <outlet property="water3ImageView" destination="lWb-Sf-6OY" id="MUX-IJ-L1Y"/>
+                        <outlet property="water4ImageView" destination="rGJ-yZ-iGo" id="bTS-pe-fsl"/>
+                        <segue destination="TQL-E7-6do" kind="show" identifier="HeartSegue" id="vMD-6b-eWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ekl-dp-5L4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109.5" y="1274.5"/>
+            <point key="canvasLocation" x="34.5" y="1274.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="507-VS-HNh">
@@ -204,7 +213,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="WXi-tV-Qmn" kind="presentation" id="qqF-qR-qez"/>
+                                    <segue destination="WXi-tV-Qmn" kind="show" id="i58-vk-cwE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUV-ba-92u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419.5" y="498.5"/>
+            <point key="canvasLocation" x="2231.5" y="498.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zLc-Eb-VQm">
@@ -237,7 +246,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="KpB-uL-U9b" kind="presentation" id="hvr-qh-Lz7"/>
+                                    <segue destination="KpB-uL-U9b" kind="show" id="hvr-qh-Lz7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -248,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHg-YU-Yvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.5" y="498.5"/>
+            <point key="canvasLocation" x="1785.5" y="498.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oU9-rp-6dm">
@@ -270,7 +279,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="OZp-Uz-Odh" kind="presentation" id="4iN-2Y-zfr"/>
+                                    <segue destination="OZp-Uz-Odh" kind="show" id="4iN-2Y-zfr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -281,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDb-SI-3Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="533.5" y="498.5"/>
+            <point key="canvasLocation" x="1345.5" y="498.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0Bf-v7-8o1">
@@ -303,13 +312,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="LvK-Z3-VYb" kind="presentation" id="b7d-Lf-zQm"/>
+                                    <segue destination="LvK-Z3-VYb" kind="show" id="b7d-Lf-zQm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HOl-Nj-LlP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHS-rI-KRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,6 +358,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jh0-Co-Uca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1419.5" y="1274.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HUc-d9-Kb3">
+            <objects>
+                <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="HUH-nP-Iqq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l6j-sy-BZt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z3x-pB-BDL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nio-l6-2nB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.5" y="498.5"/>
         </scene>
     </scenes>
     <resources>
